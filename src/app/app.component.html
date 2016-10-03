@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+  <div class="jumbotron" style="margin-top: 15px;">
+    <h1>Hello, Developer!</h1>
+    <p>Hier findest Du alle Fotos vom Fotoautomaten beim Developer Open Space.</p>
+  </div>
+
+
+<div class="row">
+  <app-image-card *ngFor="let selfie of selfies" [img]="selfie"></app-image-card>
+</div>
+
+
+</div>
