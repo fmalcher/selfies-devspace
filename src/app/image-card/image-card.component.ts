@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-image-card',
@@ -8,7 +8,12 @@ import { Component, Input } from '@angular/core';
 export class ImageCardComponent {
 
   @Input() img;
+  @HostBinding('hidden') hidden: any = true;
 
   constructor() { }
+
+  showContainer() {
+    this.hidden = false;
+  }
 
 }
