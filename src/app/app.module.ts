@@ -11,14 +11,16 @@ import { ImageCardComponent } from './image-card/image-card.component';
 import { SelfieGridComponent } from './selfie-grid/selfie-grid.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 
-import { SelfiesDevspaceRoutingModule } from './app-routing.module'
+import { SelfiesDevspaceRoutingModule } from './app-routing.module';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageCardComponent,
     SelfieGridComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,

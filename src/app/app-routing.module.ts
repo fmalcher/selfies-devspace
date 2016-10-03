@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { SelfieGridComponent } from './selfie-grid/selfie-grid.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { InfoComponent } from './info/info.component';
+
 
 const routes: Routes = [
   {
@@ -13,6 +15,10 @@ const routes: Routes = [
   {
     path: 'impressum',
     component: ImpressumComponent
+  },
+  {
+    path: 'info',
+    component: InfoComponent
   }
 ];
 
