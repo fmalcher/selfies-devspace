@@ -6,16 +6,23 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { SelfieService } from './selfie.service';
 import { ImageCardComponent } from './image-card/image-card.component';
+import { SelfieGridComponent } from './selfie-grid/selfie-grid.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+
+import { SelfiesDevspaceRoutingModule } from './app-routing.module'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageCardComponent
+    ImageCardComponent,
+    SelfieGridComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    SelfiesDevspaceRoutingModule
   ],
   providers: [SelfieService],
   bootstrap: [AppComponent]
