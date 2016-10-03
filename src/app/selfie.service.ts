@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SelfieService {
 
-  private api: string = '/assets/pics.json';
+  private api: string = '/api/images.php';
 
   constructor(private http: Http) { }
 
